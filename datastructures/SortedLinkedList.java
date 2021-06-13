@@ -1,8 +1,20 @@
+/************************************************************
+ * Purpose Implementation Of Linked List
+ * @author Rosy Rupali
+ * @Version 1.0
+ * @since 12-06-2021
+ *
+ ************************************************************/
 package com.bridgelabz.datastructures;
 
 public class SortedLinkedList<T extends Comparable<T>> {
 	Node<T> head;
 
+	/**
+	 * Ordered Linked list that store the elements in 
+	 * ascending order 
+	 * @param data
+	 */
 	public void add(T data) {
 		Node<T> newNode = new Node<>();
 		newNode.data = data;
