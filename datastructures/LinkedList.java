@@ -85,5 +85,18 @@ public class LinkedList<T> {
 			head = newHead;
 		}
 	}
+	
+	/**
+	 *It removes the last element present in the Linked List 
+	 */
+	public void popLast() {
+		Node<T> node = head;
+		Node<T> secondlastNode = head;
+		while(node.next != null) {
+			secondlastNode = node;
+			node = node.next;
+		}
+		secondlastNode.next = null;
+	}
 
 }

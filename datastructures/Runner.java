@@ -10,11 +10,11 @@ public class Runner {
 		numberList.add(56);
 		numberList.add(30);
 		numberList.add(70);
-		System.out.println("Linked list before using pop method");
+		System.out.println("Linked list before using popLast method");
 		numberList.show();
 		System.out.println();
-		numberList.pop();
-		System.out.println("Linked List after using pop method");
+		numberList.popLast();
+		System.out.println("Linked List after using popLast method");
 		numberList.show();
 
 	}
