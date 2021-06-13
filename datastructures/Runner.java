@@ -13,9 +13,10 @@ public class Runner {
 		System.out.println("Linked list elements");
 		numberList.show();
 		System.out.println();
-		int result = numberList.searchWithValue(30);
-		numberList.addAtIndex(result + 1, 40);
+		int result = numberList.searchWithValue(40);
+		numberList.remove(result);
 		numberList.show();
+		System.out.println("The size of the list is: "+numberList.size());
 
 	}
 
