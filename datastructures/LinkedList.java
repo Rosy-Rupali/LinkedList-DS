@@ -13,6 +13,7 @@ public class LinkedList<T> {
 
 	/**
 	 * add elements to the linked list
+	 * 
 	 * @param data
 	 */
 	public void add(T data) {
@@ -28,4 +29,29 @@ public class LinkedList<T> {
 			node.next = newNode;
 		}
 	}
+
+	/**
+	 * Inserts the element at the starting of the linked list
+	 * 
+	 * @param data
+	 */
+	public void addAtStart(T data) {
+		Node<T> newNode = new Node<>();
+		newNode.data = data;
+		newNode.next = head;
+		head = newNode;
+	}
+
+	/**
+	 * Current node should not be null and it is pointing to the next should be null
+	 */
+	public void show() {
+		Node<T> node = head;
+		while (node.next != null) {
+			System.out.println(node.data);
+			node = node.next;
+		}
+		System.out.println(node.data);
+	}
+
 }
