@@ -99,4 +99,29 @@ public class LinkedList<T> {
 		secondlastNode.next = null;
 	}
 
+	
+	/**
+	 * Checks key value is present or not and if present
+	 * at which position
+	 * @param data
+	 * @return the index at which the key value is found 
+	 */
+	public int searchWithValue(T data) {
+		Node<T> node = head;
+		int index = 0;
+		if(node != null) {
+			while((node.next != null) || (node.data != null)) {
+				if(node.data == data) {
+					break;
+				}
+				node = node.next;
+				if(node == null) {
+					return -1;
+				}
+				index++;
+			}
+		}
+		return index;
+	}
+
 }
