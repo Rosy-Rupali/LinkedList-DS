@@ -75,5 +75,15 @@ public class LinkedList<T> {
 			node.next = newNode;
 		}
 	}
+	
+	/**
+	 * It removes the first element present in the Linked list
+	 */
+	public void pop() {
+		if(null != head) {
+			Node<T> newHead = head.next;
+			head = newHead;
+		}
+	}
 
 }
