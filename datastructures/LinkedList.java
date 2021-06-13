@@ -53,5 +53,27 @@ public class LinkedList<T> {
 		}
 		System.out.println(node.data);
 	}
+	
+	
+	/**
+	 * Inserts the specific element in between of two elements
+	 * @param index
+	 * @param data
+	 */
+	public void addAtIndex(int index, T data) {
+		Node<T> newNode = new Node<>();
+		newNode.data = data;
+
+		if (index == 0) {
+			addAtStart(data);
+		} else {
+			Node<T> node = head;
+			for (int i = 0; i < index - 1; i++) {
+				node = node.next;
+			}
+			newNode.next = node.next;
+			node.next = newNode;
+		}
+	}
 
 }
