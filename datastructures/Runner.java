@@ -9,6 +9,7 @@ public class Runner {
 		LinkedList<Integer> numberList = new LinkedList<Integer>();
 		numberList.add(56);
 		numberList.add(30);
+		numberList.add(40);
 		numberList.add(70);
 		System.out.println("Linked list elements");
 		numberList.show();
